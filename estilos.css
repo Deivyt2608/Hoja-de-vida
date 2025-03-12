@@ -1,0 +1,22 @@
+body{
+    background:linear-gradient(rgb(94, 89, 89),rgb(211, 209, 209),rgb(94, 89, 89));
+}
+
+.Base{
+    width: 80%;  
+    background-color: rgb(241, 241, 241); 
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    padding: 20px;
+    text-align: justify;
+    border-radius: 5%;
+}
+
+.fPerfil{
+
+}
+
+.nombre{
+    font-size: 50px;
+}
