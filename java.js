@@ -36,7 +36,6 @@ const btn = document.getElementById('modo-btn');
 btn.addEventListener('click', () => {
     document.body.classList.toggle('modo-oscuro');
 
-    // Guardar la preferencia del usuario en el almacenamiento local
     if (document.body.classList.contains('modo-oscuro')) {
         btn.textContent = 'Modo Claro';
         localStorage.setItem('modo', 'oscuro');
@@ -46,7 +45,6 @@ btn.addEventListener('click', () => {
     }
 });
 
-// Recuperar preferencia del modo
 if (localStorage.getItem('modo') === 'oscuro') {
     document.body.classList.add('modo-oscuro');
     btn.textContent = 'Modo Claro';
