@@ -1,2 +1,3 @@
 # Hoja-de-vida
-Mi hoja de vida personal
+Esta es la hoja de vida de Deivyt Santiago Garcia Oviedo 
+creada con html, css y javascipt
