@@ -1,11 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
+:root{
+    --fondo-gradiente: linear-gradient(to bottom right, rgb(89, 90, 94), rgb(211, 209, 209), rgb(94, 89, 89));
+    --fondo-base: rgb(241, 241, 241);
+    --texto-principal: #000;
+}
+body.modo-oscuro {
+    --fondo-gradiente: linear-gradient(to bottom right, #121212, #1f1f1f, #2a2a2a);
+    --fondo-base: #2a2a2a;
+    --texto-principal: #E0E0E0;
+}
+
 body{
-    background:linear-gradient(to bottom right,rgb(89, 90, 94),rgb(211, 209, 209),rgb(94, 89, 89));
+    background:var(--fondo-gradiente);
     font-family: "Lato", sans-serif;
+    color: var(--texto-principal);
     .Base{
         width: 80%;  
-        background-color: rgb(241, 241, 241); 
+        background-color: var(--fondo-base); 
         border: 1px solid #ccc;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         margin: 20px auto;
@@ -180,5 +192,5 @@ body{
 
 
 body.oscuro{
-
+    
 }
