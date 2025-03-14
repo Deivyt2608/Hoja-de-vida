@@ -6,7 +6,7 @@
         <title>Tarjeta de presentación</title>
         <link rel="stylesheet" href="estilos.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-        <script src="java.js"></script>
+        
 
     </head>
     <body>
@@ -48,14 +48,25 @@
                 
                 <div class="der">
                     <div class="skill">
-                        <h2 class="subtitulo">Habilidades e idiomas</h2>
+                        <h2 class="subtitulo">Habilidades</h2>
+                        <p class="txtSkill">Revela el progreso pasando encima de la barra</p>
                         <ul class="listSkill">
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>JavaScript</li>
-                            <li>Phyton</li>
-                            <li>PoweBI</li>
-                            <li>Ingles</li>
+                            <li><i class="fa-brands fa-html5"></i> HTML</li>
+                            <div class="barraProgreso" id="barra1">
+                                <div class="progresoHtml"></div>
+                            </div>
+                            <li><i class="fa-brands fa-css3-alt"></i> CSS</li>
+                            <div class="barraProgreso" id="barra2">
+                                <div class="progresoCss"></div>
+                            </div>
+                            <li><i class="fa-brands fa-js"></i> JavaScript</li>
+                            <div class="barraProgreso" id="barra3">
+                                <div class="progresoJs"></div>
+                            </div>
+                            <li><i class="fa-brands fa-python"></i> Phyton</li>
+                            <div class="barraProgreso" id="barra4">
+                                <div class="progresoPh"></div>
+                            </div>
                         </ul>
                     </div>
     
@@ -99,7 +110,8 @@
                 </ul>
             </div>
            
-            
+            <button id="oscuro">Cambiar a modo oscuro</button>
         </div>
+        <script src="java.js"></script>
     </body>
 </html>

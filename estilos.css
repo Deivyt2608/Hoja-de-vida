@@ -103,14 +103,73 @@ ul{
     list-style: none;
     padding: 0;
     text-align: center;
-
+    font-size: 2.5vw;
     .obRedes{
         display: inline-block;
-        margin: 0 15px;
-        font-size: 2.5vw;
+        margin: 0 10%;
+        
     }
     i{
+        font-size: 7vw;
         color: #84a6f2;
-        font-size: 2.5vw;
+        transition: transform 0.3s ease-in-out; 
     }
+    i:hover{
+        transform: scale(1.25);
+    }
+}
+
+.skill{
+    .listSkill{
+        list-style-type: none;
+    }
+    .barraProgreso{
+        width: 90%;
+        height: 10px;
+        border: 1px solid black;
+        box-shadow: 0 0 5px black;
+        padding: 0.1rem;
+    }
+    .progresoHtml{
+        --porcentaje: 0.5%;
+        background: linear-gradient(to right,rgb(183, 181, 181), rgb(27, 194, 63));
+        width: var(--porcentaje);
+        height: 100%;
+        box-shadow: 0 0 4px 2px rgb(27, 194, 63);
+        transition: width 0.7s;
+    }
+    .progresoCss{
+        --porcentaje: 0.5%;
+        background: linear-gradient(to right,rgb(183, 181, 181), rgb(194, 188, 27));
+        width: var(--porcentaje);
+        height: 100%;
+        box-shadow: 0 0 4px 2px rgb(166, 194, 27);
+        transition: width 0.7s;
+    }
+    .progresoJs{
+        --porcentaje: 0.5%;
+        background: linear-gradient(to right,rgb(183, 181, 181), rgb(194, 35, 27));
+        width: var(--porcentaje);
+        height: 100%;
+        box-shadow: 0 0 4px 2px rgb(194, 60, 27);
+        transition: width 0.7s;
+    }
+    .progresoPh{
+        --porcentaje: 0.5%;
+        background: linear-gradient(to right,rgb(183, 181, 181), rgb(27, 83, 194));
+        width: var(--porcentaje);
+        height: 100%;
+        box-shadow: 0 0 4px 2px rgb(27, 133, 194);
+        transition: width 0.7s;
+    }
+    .txtSkill{
+        font-size: 10px;
+        text-align: center;
+    }
+}
+
+#oscuro{
+    font-size: 3vw;
+    background-color: #84a6f2;
+    border-radius: 50px;
 }
