@@ -3,173 +3,182 @@
 body{
     background:linear-gradient(to bottom right,rgb(89, 90, 94),rgb(211, 209, 209),rgb(94, 89, 89));
     font-family: "Lato", sans-serif;
-}
+    .Base{
+        width: 80%;  
+        background-color: rgb(241, 241, 241); 
+        border: 1px solid #ccc;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin: 20px auto;
+        padding: 20px;
+        text-align: center;
+        border-radius: 2%;
+        display: block;
+    }
+    
+    .nombre{
+        font-size: 5vw;
+        text-align: center;
+        font-weight: 700;
+        font-style: italic;
+    }
+    
+    .divisor1{
+        border-bottom:5px solid #84a6f2;
+        border-radius: 50px;
+        width: 100%;
+        padding: 5px;
+        margin: 0%;
+        border-radius: 50px;
+    }
+    
+    .profe{
+        font-size: 3.3vw;
+        text-align: center;
+        font-weight: 400;
+    }
+    
+    .cont{
+        text-align: justify;
+        .liContacto{
+            list-style: none;
+            padding: 0;
+            text-align: center;
+    
+            .obContacto{
+                display: inline-block;
+                margin: 0 15px;
+            }
+            i{
+                color: #84a6f2;
+            }
+        }
+    }
+    
+    .subtitulo{
+        background-color: #84a6f2;
+        text-align: center;
+        font-size: 3.1vw;
+        align-items: center;
+        margin: 0%;
+        border-radius: 50px;
+        
+    }
+    
+    .columnas{
+        display: flex;
+        justify-content: space-between;
+        .izq{
+            display: inline-block;
+            width: 44%;
+            margin: 1%;
+            padding: 0%;
+            text-align: left;
+        }
+        .der{
+            display: inline-block;
+            width: 44%;
+            margin: 1%;
+            padding: 0%;
+            text-align: left;
+        }
+    }
+    .listaEstudios{
+        list-style-type: none;
+    }
+    .skill{
+        .listSkill{
+            list-style-type: none;
+        }
+        .barraProgreso{
+            width: 90%;
+            height: 10px;
+            border: 1px solid black;
+            box-shadow: 0 0 5px black;
+            padding: 0.1rem;
+        }
+        .progresoHtml{
+            --porcentaje: 0.5%;
+            background: linear-gradient(to right,rgb(183, 181, 181), rgb(27, 194, 63));
+            width: var(--porcentaje);
+            height: 100%;
+            box-shadow: 0 0 4px 2px rgb(27, 194, 63);
+            transition: width 0.7s;
+        }
+        .progresoCss{
+            --porcentaje: 0.5%;
+            background: linear-gradient(to right,rgb(183, 181, 181), rgb(194, 188, 27));
+            width: var(--porcentaje);
+            height: 100%;
+            box-shadow: 0 0 4px 2px rgb(166, 194, 27);
+            transition: width 0.7s;
+        }
+        .progresoJs{
+            --porcentaje: 0.5%;
+            background: linear-gradient(to right,rgb(183, 181, 181), rgb(194, 35, 27));
+            width: var(--porcentaje);
+            height: 100%;
+            box-shadow: 0 0 4px 2px rgb(194, 60, 27);
+            transition: width 0.7s;
+        }
+        .progresoPh{
+            --porcentaje: 0.5%;
+            background: linear-gradient(to right,rgb(183, 181, 181), rgb(27, 83, 194));
+            width: var(--porcentaje);
+            height: 100%;
+            box-shadow: 0 0 4px 2px rgb(27, 133, 194);
+            transition: width 0.7s;
+        }
+        .txtSkill{
+            font-size: 1.7vw;
+            text-align: center;
+        }
+    }
 
-.Base{
-    width: 80%;  
-    background-color: rgb(241, 241, 241); 
-    border: 1px solid #ccc;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 20px auto;
-    padding: 20px;
-    text-align: center;
-    border-radius: 2%;
-    display: block;
-}
-
-.nombre{
-    font-size: 5vw;
-    text-align: center;
-    font-weight: 700;
-    font-style: italic;
-}
-
-.divisor1{
-    border-bottom:5px solid #84a6f2;
-    border-radius: 50px;
-    width: 100%;
-    padding: 5px;
-    margin: 0%;
-    border-radius: 50px;
-}
-
-.profe{
-    font-size: 3.3vw;
-    text-align: center;
-    font-weight: 400;
-}
-
-.cont{
-    text-align: justify;
-    .liContacto{
+    p{
+        font-size: 2vw;
+        margin-left: 15px;
+    }
+    
+    h3{
+        font-size: 2.35vw;
+        margin-left: 15px;
+    }
+    ul{
+        font-size: 2.5vw;
+    
+    }
+    
+    .liRedes{
         list-style: none;
         padding: 0;
         text-align: center;
-
-        .obContacto{
+        font-size: 2.5vw;
+        .obRedes{
             display: inline-block;
-            margin: 0 15px;
+            margin: 0 10%;
+            
         }
         i{
+            font-size: 7vw;
             color: #84a6f2;
+            transition: transform 0.3s ease-in-out; 
+        }
+        i:hover{
+            color: #7290d2;
+            transform: scale(1.25);
         }
     }
-}
-
-.subtitulo{
-    background-color: #84a6f2;
-    text-align: center;
-    font-size: 3.1vw;
-    align-items: center;
-    margin: 0%;
-    border-radius: 50px;
     
-}
-
-.columnas{
-    display: flex;
-    justify-content: space-between;
-    .izq{
-        display: inline-block;
-        width: 44%;
-        margin: 1%;
-        padding: 0%;
-        text-align: left;
-    }
-    .der{
-        display: inline-block;
-        width: 44%;
-        margin: 1%;
-        padding: 0%;
-        text-align: left;
+    
+    
+    .boton{
+        font-size: 3vw;
+        background-color: #84a6f2;
+        border-radius: 50px;
     }
 }
 
-p{
-    font-size: 2vw;
-    margin-left: 15px;
-}
 
-h3{
-    font-size: 2.35vw;
-}
-ul{
-    font-size: 2.5vw;
-    margin-left: 15px;
+body.oscuro{
 
-}
-
-.liRedes{
-    list-style: none;
-    padding: 0;
-    text-align: center;
-    font-size: 2.5vw;
-    .obRedes{
-        display: inline-block;
-        margin: 0 10%;
-        
-    }
-    i{
-        font-size: 7vw;
-        color: #84a6f2;
-        transition: transform 0.3s ease-in-out; 
-    }
-    i:hover{
-        transform: scale(1.25);
-    }
-}
-
-.skill{
-    .listSkill{
-        list-style-type: none;
-    }
-    .barraProgreso{
-        width: 90%;
-        height: 10px;
-        border: 1px solid black;
-        box-shadow: 0 0 5px black;
-        padding: 0.1rem;
-    }
-    .progresoHtml{
-        --porcentaje: 0.5%;
-        background: linear-gradient(to right,rgb(183, 181, 181), rgb(27, 194, 63));
-        width: var(--porcentaje);
-        height: 100%;
-        box-shadow: 0 0 4px 2px rgb(27, 194, 63);
-        transition: width 0.7s;
-    }
-    .progresoCss{
-        --porcentaje: 0.5%;
-        background: linear-gradient(to right,rgb(183, 181, 181), rgb(194, 188, 27));
-        width: var(--porcentaje);
-        height: 100%;
-        box-shadow: 0 0 4px 2px rgb(166, 194, 27);
-        transition: width 0.7s;
-    }
-    .progresoJs{
-        --porcentaje: 0.5%;
-        background: linear-gradient(to right,rgb(183, 181, 181), rgb(194, 35, 27));
-        width: var(--porcentaje);
-        height: 100%;
-        box-shadow: 0 0 4px 2px rgb(194, 60, 27);
-        transition: width 0.7s;
-    }
-    .progresoPh{
-        --porcentaje: 0.5%;
-        background: linear-gradient(to right,rgb(183, 181, 181), rgb(27, 83, 194));
-        width: var(--porcentaje);
-        height: 100%;
-        box-shadow: 0 0 4px 2px rgb(27, 133, 194);
-        transition: width 0.7s;
-    }
-    .txtSkill{
-        font-size: 10px;
-        text-align: center;
-    }
-}
-
-#oscuro{
-    font-size: 3vw;
-    background-color: #84a6f2;
-    border-radius: 50px;
 }
