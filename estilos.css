@@ -1,5 +1,5 @@
 body{
-    background:linear-gradient(rgb(94, 89, 89),rgb(211, 209, 209),rgb(94, 89, 89));
+    background:linear-gradient(to bottom right,rgb(89, 90, 94),rgb(211, 209, 209),rgb(94, 89, 89));
 }
 
 .Base{
@@ -9,14 +9,69 @@ body{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 20px auto;
     padding: 20px;
-    text-align: justify;
-    border-radius: 5%;
-}
-
-.fPerfil{
-
+    text-align: center;
+    border-radius: 2%;
+    display: block;
 }
 
 .nombre{
     font-size: 50px;
+    text-align: center;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.divisor1{
+    border-bottom: 10px solid #84a6f2;
+    border-radius: 100%;
+    width: 100%;
+    background: linear-gradient(to right, #ffcc00, #ff0000, #ffcc00);
+}
+
+.profe{
+    text-align: center;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+}
+
+.cont{
+    text-align: justify;
+    .liContacto{
+        list-style: none;
+        padding: 0;
+        font-size: 20px;
+        text-align: center;
+
+        .obContacto{
+            display: inline-block;
+            margin: 0 15px;
+        }
+    }
+}
+
+.subtitulo{
+    background-color: #84a6f2;
+    text-align: center;
+    align-items: center;
+    padding: 5px 20px;
+    margin: 0%;
+    border-radius: 50px;
+}
+
+.columnas{
+    display: flex;
+    justify-content: space-between;
+    .izq{
+        display: inline-block;
+        width: 44%;
+        margin: 1%;
+        padding: 0%;
+    }
+    .der{
+        display: inline-block;
+        width: 44%;
+        margin: 1%;
+        padding: 0%;
+    }
 }
