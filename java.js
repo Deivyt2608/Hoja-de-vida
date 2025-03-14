@@ -1,4 +1,4 @@
-
+/*Codigo utilizado para el funcionamiento de las barras de habilidad*/
 const barra1 = document.getElementById("barra1");
 const html = document.querySelector(".progresoHtml")
 
@@ -30,7 +30,7 @@ barra4.addEventListener("mouseover",() => {
     const value = 60;
     Ph.style.setProperty("--porcentaje", `${value}%`);
 })
-
+/*Codigo utilizado para cambiar entre modo oscuro y claro*/
 const btn = document.getElementById('modo-btn');
 
 btn.addEventListener('click', () => {

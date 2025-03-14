@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-
+/*Variables de los colores de texto y fondo para alternar entre modo claro y oscuro*/
 :root{
     --fondo-gradiente: linear-gradient(to bottom right, rgb(89, 90, 94), rgb(211, 209, 209), rgb(94, 89, 89));
     --fondo-base: rgb(241, 241, 241);
@@ -11,6 +11,7 @@ body.modo-oscuro {
     --texto-principal: #E0E0E0;
 }
 
+/*Estilos de la pagina web*/
 body{
     background:var(--fondo-gradiente);
     font-family: "Lato", sans-serif;
@@ -181,16 +182,9 @@ body{
         }
     }
     
-    
-    
     .boton{
         font-size: 3vw;
         background-color: #84a6f2;
         border-radius: 50px;
     }
-}
-
-
-body.oscuro{
-    
 }
